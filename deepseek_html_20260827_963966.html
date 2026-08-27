@@ -4,39 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sharmila V | MBA Portfolio</title>
-
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
-
-    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
             font-family: 'Inter', sans-serif;
             background: #f8fafc;
             color: #0f172a;
             line-height: 1.6;
-            scroll-behavior: smooth;
         }
-
         a {
             text-decoration: none;
             color: inherit;
         }
-
         .container {
             max-width: 1100px;
             margin: 0 auto;
             padding: 0 24px;
         }
-
         nav {
             background: #ffffff;
             box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
@@ -44,27 +34,20 @@
             position: sticky;
             top: 0;
             z-index: 100;
-            backdrop-filter: blur(8px);
-            background: rgba(255, 255, 255, 0.92);
         }
-
         .nav-inner {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-
         .logo {
             font-size: 22px;
             font-weight: 800;
-            letter-spacing: -0.5px;
             color: #0f172a;
         }
-
         .logo span {
             color: #2563eb;
         }
-
         .nav-links {
             display: flex;
             gap: 32px;
@@ -72,39 +55,28 @@
             font-weight: 500;
             font-size: 15px;
         }
-
-        .nav-links a {
-            transition: color 0.2s;
-        }
-
         .nav-links a:hover {
             color: #2563eb;
         }
-
         .nav-cta {
             background: #0f172a;
             color: #fff !important;
             padding: 8px 20px;
             border-radius: 30px;
             font-weight: 600;
-            transition: background 0.3s;
         }
-
         .nav-cta:hover {
             background: #2563eb !important;
         }
-
         .hero {
             padding: 60px 0 40px;
         }
-
         .hero-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 50px;
             align-items: center;
         }
-
         .hero-badge {
             display: inline-block;
             background: #e0e7ff;
@@ -114,34 +86,27 @@
             padding: 4px 16px;
             border-radius: 30px;
             margin-bottom: 16px;
-            letter-spacing: 0.3px;
         }
-
         .hero h1 {
             font-size: 44px;
             font-weight: 800;
             line-height: 1.2;
-            letter-spacing: -1px;
             margin-bottom: 12px;
         }
-
         .hero h1 span {
             color: #2563eb;
         }
-
         .hero p {
             font-size: 18px;
             color: #475569;
             max-width: 480px;
             margin-bottom: 24px;
         }
-
         .hero-buttons {
             display: flex;
             gap: 14px;
             flex-wrap: wrap;
         }
-
         .btn-primary {
             background: #0f172a;
             color: #fff;
@@ -149,18 +114,12 @@
             border-radius: 40px;
             font-weight: 600;
             transition: 0.3s;
-            border: none;
-            cursor: pointer;
-            font-size: 15px;
             display: inline-block;
         }
-
         .btn-primary:hover {
             background: #2563eb;
             transform: translateY(-2px);
-            box-shadow: 0 8px 24px rgba(37, 99, 235, 0.25);
         }
-
         .btn-outline {
             background: transparent;
             color: #0f172a;
@@ -169,37 +128,25 @@
             font-weight: 600;
             border: 2px solid #e2e8f0;
             transition: 0.3s;
-            cursor: pointer;
-            font-size: 15px;
             display: inline-block;
         }
-
         .btn-outline:hover {
             border-color: #0f172a;
             background: #f1f5f9;
         }
-
         .hero-stats {
             display: flex;
             gap: 40px;
             margin-top: 30px;
         }
-
-        .hero-stats div {
-            text-align: left;
-        }
-
         .hero-stats h3 {
             font-size: 28px;
             font-weight: 800;
         }
-
         .hero-stats p {
             font-size: 14px;
             color: #64748b;
-            margin: 0;
         }
-
         .hero-avatar {
             background: linear-gradient(135deg, #e0e7ff, #c7d2fe);
             border-radius: 30px;
@@ -211,7 +158,6 @@
             justify-content: center;
             align-items: center;
         }
-
         .hero-avatar .avatar-icon {
             font-size: 80px;
             color: #1e293b;
@@ -225,93 +171,70 @@
             box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
             overflow: hidden;
         }
-
         .hero-avatar .avatar-icon img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
-
         .hero-avatar h3 {
             margin-top: 18px;
             font-size: 20px;
         }
-
         .hero-avatar p {
             color: #475569;
             font-size: 14px;
         }
-
         .social-icons {
             margin-top: 12px;
             display: flex;
             gap: 16px;
             font-size: 20px;
-            color: #1e293b;
         }
-
-        .social-icons a {
-            transition: 0.3s;
-        }
-
         .social-icons a:hover {
             color: #2563eb;
-            transform: translateY(-3px);
         }
-
         .section-title {
             font-size: 30px;
             font-weight: 700;
-            letter-spacing: -0.5px;
             margin-bottom: 8px;
         }
-
         .section-title span {
             color: #2563eb;
         }
-
         .section-sub {
             color: #64748b;
             margin-bottom: 36px;
             font-size: 16px;
         }
-
         hr {
             border: none;
             border-top: 1px solid #e2e8f0;
             margin: 30px 0;
         }
-
         .about-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 40px;
         }
-
         .about-grid ul {
             list-style: none;
             margin-top: 10px;
         }
-
         .about-grid ul li {
             padding: 8px 0;
             border-bottom: 1px solid #f1f5f9;
             display: flex;
             gap: 12px;
         }
-
         .about-grid ul li i {
             color: #2563eb;
             width: 20px;
-            margin-top: 4px;
         }
-
         .skills-tags {
             display: flex;
             flex-wrap: wrap;
             gap: 12px;
         }
-
         .skills-tags span {
             background: #fff;
             border: 1px solid #e2e8f0;
@@ -319,21 +242,16 @@
             border-radius: 30px;
             font-size: 14px;
             font-weight: 500;
-            transition: 0.2s;
         }
-
         .skills-tags span:hover {
             border-color: #2563eb;
             background: #f0f4ff;
-            transform: translateY(-2px);
         }
-
         .card-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 28px;
         }
-
         .card {
             background: #fff;
             border-radius: 20px;
@@ -342,35 +260,28 @@
             border: 1px solid #f1f5f9;
             transition: 0.3s;
         }
-
         .card:hover {
             transform: translateY(-6px);
             box-shadow: 0 16px 48px rgba(0, 0, 0, 0.06);
-            border-color: #e0e7ff;
         }
-
         .card .icon {
             font-size: 28px;
             color: #2563eb;
             margin-bottom: 12px;
         }
-
         .card h4 {
             font-size: 18px;
             margin-bottom: 4px;
         }
-
         .card .meta {
             color: #64748b;
             font-size: 14px;
             margin-bottom: 10px;
         }
-
         .card p {
             color: #475569;
             font-size: 15px;
         }
-
         .card .tag {
             display: inline-block;
             background: #f1f5f9;
@@ -381,14 +292,12 @@
             margin-top: 10px;
             color: #334155;
         }
-
         .contact-links {
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
             margin-top: 10px;
         }
-
         .contact-links a {
             background: #fff;
             padding: 12px 24px;
@@ -400,17 +309,13 @@
             align-items: center;
             gap: 10px;
         }
-
         .contact-links a:hover {
             border-color: #2563eb;
             background: #f8faff;
-            transform: translateY(-2px);
         }
-
         .contact-links i {
             color: #2563eb;
         }
-
         footer {
             text-align: center;
             padding: 40px 0 30px;
@@ -419,59 +324,47 @@
             border-top: 1px solid #e2e8f0;
             margin-top: 40px;
         }
-
         @media (max-width: 768px) {
             .hero-grid {
                 grid-template-columns: 1fr;
                 text-align: center;
             }
-
             .hero p {
                 margin-left: auto;
                 margin-right: auto;
             }
-
             .hero-buttons {
                 justify-content: center;
             }
-
             .hero-stats {
                 justify-content: center;
             }
-
             .about-grid {
                 grid-template-columns: 1fr;
             }
-
             .nav-links {
                 gap: 16px;
                 font-size: 13px;
             }
-
             .nav-cta {
                 padding: 6px 14px;
             }
-
             .hero h1 {
                 font-size: 32px;
             }
-
             .section-title {
                 font-size: 26px;
             }
         }
-
         @media (max-width: 480px) {
             .nav-links li:not(.nav-cta-li) {
                 display: none;
             }
-
             .hero-avatar .avatar-icon {
                 width: 100px;
                 height: 100px;
                 font-size: 50px;
             }
-
             .card-grid {
                 grid-template-columns: 1fr;
             }
@@ -480,7 +373,6 @@
 </head>
 <body>
 
-    <!-- ====== NAVIGATION ====== -->
     <nav>
         <div class="container nav-inner">
             <div class="logo">Sharmila<span>.</span></div>
@@ -494,43 +386,25 @@
         </div>
     </nav>
 
-    <!-- ====== HERO ====== -->
     <section class="hero">
         <div class="container hero-grid">
-
-            <!-- Left -->
             <div>
                 <div class="hero-badge"><i class="fas fa-graduation-cap"></i> MBA 2nd Year · 2026</div>
                 <h1>Hi, I'm <span>Sharmila V</span></h1>
-                <p>
-                    MBA 2nd Year student with a passion for strategy, finance, and
-                    data-driven decision making. Ready to lead and transform businesses.
-                </p>
+                <p>MBA 2nd Year student with a passion for strategy, finance, and data-driven decision making.</p>
                 <div class="hero-buttons">
                     <a href="#contact" class="btn-primary"><i class="fas fa-paper-plane"></i> Let's Connect</a>
                     <a href="#" class="btn-outline" id="resumeBtn"><i class="fas fa-file-pdf"></i> Download Resume</a>
                 </div>
                 <div class="hero-stats">
-                    <div>
-                        <h3>2nd</h3>
-                        <p>MBA Year</p>
-                    </div>
-                    <div>
-                        <h3>4+</h3>
-                        <p>Live Projects</p>
-                    </div>
-                    <div>
-                        <h3>3</h3>
-                        <p>Certifications</p>
-                    </div>
+                    <div><h3>2nd</h3><p>MBA Year</p></div>
+                    <div><h3>4+</h3><p>Live Projects</p></div>
+                    <div><h3>3</h3><p>Certifications</p></div>
                 </div>
             </div>
-
-            <!-- Right - Avatar with Photo -->
             <div class="hero-avatar">
                 <div class="avatar-icon">
-                    <!-- REPLACE 'sharmila.jpg' WITH YOUR ACTUAL PHOTO FILENAME -->
-                    <img src="sharmila.jpg" alt="Sharmila V" />
+                    <i class="fas fa-user-tie"></i>
                 </div>
                 <h3>Sharmila V</h3>
                 <p>MBA 2nd Year · Strategy &amp; Analytics</p>
@@ -540,29 +414,22 @@
                     <a href="#"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
-
         </div>
     </section>
 
     <div class="container"><hr /></div>
 
-    <!-- ====== ABOUT ====== -->
     <section id="about" class="container" style="padding:20px 0;">
         <h2 class="section-title">About <span>Me</span></h2>
         <p class="section-sub">A quick snapshot of who I am and what I bring.</p>
-
         <div class="about-grid">
             <div>
                 <p style="color:#334155; font-size:16px;">
                     I'm <strong>Sharmila V</strong>, currently in my <strong>2nd year of MBA</strong> 
-                    with a focus on <strong>Finance &amp; Strategy</strong>. My background in business 
-                    operations and data analytics has equipped me with a unique blend of quantitative 
-                    and leadership skills.
+                    with a focus on <strong>Finance &amp; Strategy</strong>.
                 </p>
                 <p style="color:#334155; margin-top:12px;">
-                    I thrive in high-pressure environments and enjoy solving complex business
-                    problems using both creative thinking and analytical rigor. Ready to take on 
-                    challenging roles in management and consulting.
+                    I thrive in high-pressure environments and enjoy solving complex business problems.
                 </p>
             </div>
             <div>
@@ -570,7 +437,7 @@
                     <li><i class="fas fa-map-pin"></i> <strong>Location:</strong> Tamil Nadu, India</li>
                     <li><i class="fas fa-university"></i> <strong>Degree:</strong> MBA 2nd Year</li>
                     <li><i class="fas fa-calendar"></i> <strong>Batch:</strong> 2024 – 2026</li>
-                    <li><i class="fas fa-trophy"></i> <strong>Goal:</strong> Management Consultant / Product Leader</li>
+                    <li><i class="fas fa-trophy"></i> <strong>Goal:</strong> Management Consultant</li>
                 </ul>
             </div>
         </div>
@@ -578,65 +445,48 @@
 
     <div class="container"><hr /></div>
 
-    <!-- ====== SKILLS ====== -->
     <section id="skills" class="container" style="padding:20px 0;">
         <h2 class="section-title">Core <span>Competencies</span></h2>
         <p class="section-sub">Tools, technologies &amp; business skills I work with.</p>
-
         <div class="skills-tags">
             <span>Financial Modeling</span>
             <span>Excel &amp; VBA</span>
             <span>Power BI</span>
             <span>Tableau</span>
             <span>SQL</span>
-            <span>Python (Pandas)</span>
+            <span>Python</span>
             <span>Business Strategy</span>
             <span>Market Research</span>
             <span>Project Management</span>
             <span>Leadership</span>
-            <span>Public Speaking</span>
-            <span>Negotiation</span>
         </div>
     </section>
 
     <div class="container"><hr /></div>
 
-    <!-- ====== EXPERIENCE ====== -->
     <section id="experience" class="container" style="padding:20px 0;">
         <h2 class="section-title">Work <span>Experience</span></h2>
         <p class="section-sub">Where I've worked and what I've delivered.</p>
-
         <div class="card-grid">
             <div class="card">
                 <div class="icon"><i class="fas fa-building"></i></div>
                 <h4>Operations Analyst</h4>
                 <div class="meta">XYZ Corp · 2022 – 2024</div>
-                <p>
-                    Streamlined supply chain processes, reducing costs by 12% through
-                    data-driven vendor negotiations and inventory optimization.
-                </p>
+                <p>Streamlined supply chain processes, reducing costs by 12%.</p>
                 <span class="tag">Operations</span>
             </div>
-
             <div class="card">
                 <div class="icon"><i class="fas fa-chart-line"></i></div>
                 <h4>Business Intern</h4>
                 <div class="meta">ABC Consultancy · Summer 2023</div>
-                <p>
-                    Assisted in market entry strategy for a fintech client. Delivered a
-                    50-page competitive analysis report used for board presentation.
-                </p>
+                <p>Assisted in market entry strategy for a fintech client.</p>
                 <span class="tag">Strategy</span>
             </div>
-
             <div class="card">
                 <div class="icon"><i class="fas fa-users"></i></div>
                 <h4>Student Leader</h4>
                 <div class="meta">MBA Student Council · 2025</div>
-                <p>
-                    Led a team of 12 to organize the annual business summit with 500+
-                    participants and 20+ industry speakers.
-                </p>
+                <p>Led a team of 12 to organize the annual business summit.</p>
                 <span class="tag">Leadership</span>
             </div>
         </div>
@@ -644,42 +494,29 @@
 
     <div class="container"><hr /></div>
 
-    <!-- ====== PROJECTS ====== -->
     <section id="projects" class="container" style="padding:20px 0;">
         <h2 class="section-title">Key <span>Projects</span></h2>
         <p class="section-sub">Real-world problems I've solved during my MBA.</p>
-
         <div class="card-grid">
             <div class="card">
                 <div class="icon"><i class="fas fa-credit-card"></i></div>
                 <h4>Fintech Credit Risk Model</h4>
                 <div class="meta">MBA Capstone · 2025</div>
-                <p>
-                    Built a logistic regression model to predict loan defaults using
-                    customer transaction data. Achieved 84% accuracy.
-                </p>
+                <p>Built a logistic regression model with 84% accuracy.</p>
                 <span class="tag">Data Analytics</span>
             </div>
-
             <div class="card">
                 <div class="icon"><i class="fas fa-store"></i></div>
                 <h4>Retail Expansion Strategy</h4>
                 <div class="meta">Marketing Project · 2024</div>
-                <p>
-                    Developed a go-to-market plan for a regional retail chain to expand
-                    into 3 new cities. ROI projected at 22% in 18 months.
-                </p>
+                <p>ROI projected at 22% in 18 months.</p>
                 <span class="tag">Marketing</span>
             </div>
-
             <div class="card">
                 <div class="icon"><i class="fas fa-handshake"></i></div>
                 <h4>M&amp;A Deal Simulation</h4>
                 <div class="meta">Finance Lab · 2025</div>
-                <p>
-                    Simulated a cross-border acquisition. Performed DCF, comparable
-                    analysis, and synergy valuation.
-                </p>
+                <p>Performed DCF, comparable analysis, and synergy valuation.</p>
                 <span class="tag">Finance</span>
             </div>
         </div>
@@ -687,11 +524,9 @@
 
     <div class="container"><hr /></div>
 
-    <!-- ====== CONTACT ====== -->
     <section id="contact" class="container" style="padding:20px 0 10px;">
         <h2 class="section-title">Get in <span>Touch</span></h2>
-        <p class="section-sub">Let's connect — I'm always open to opportunities &amp; conversations.</p>
-
+        <p class="section-sub">Let's connect — I'm always open to opportunities.</p>
         <div class="contact-links">
             <a href="mailto:sharmilavinayagam29@gmail.com"><i class="fas fa-envelope"></i> sharmilavinayagam29@gmail.com</a>
             <a href="#"><i class="fab fa-linkedin-in"></i> linkedin.com/in/sharmilav</a>
@@ -700,7 +535,6 @@
         </div>
     </section>
 
-    <!-- ====== FOOTER ====== -->
     <footer>
         <div class="container">
             <p id="footerText"></p>
@@ -708,9 +542,7 @@
         </div>
     </footer>
 
-    <!-- ====== JAVASCRIPT ====== -->
     <script>
-        // Smooth Scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 const targetId = this.getAttribute('href');
@@ -718,57 +550,24 @@
                 const targetEl = document.querySelector(targetId);
                 if (targetEl) {
                     e.preventDefault();
-                    targetEl.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
+                    targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
             });
         });
 
-        // Dynamic Footer
         const footerText = document.getElementById('footerText');
         if (footerText) {
-            footerText.innerHTML =
-                `&copy; ${new Date().getFullYear()} · Sharmila V · MBA 2nd Year Portfolio · Built with <i class="fas fa-heart" style="color:#2563eb;"></i> for the future.`;
+            footerText.innerHTML = `&copy; ${new Date().getFullYear()} · Sharmila V · MBA 2nd Year Portfolio · Built with <i class="fas fa-heart" style="color:#2563eb;"></i> for the future.`;
         }
 
-        // Resume Button
-        const resumeBtn = document.getElementById('resumeBtn');
-        if (resumeBtn) {
-            resumeBtn.addEventListener('click', function(e) {
-                e.preventDefault();
-                alert('📄 Sharmila, please upload your actual resume PDF and update the href link.');
-            });
-        }
-
-        // Console
-        console.log('🚀 Sharmila V — MBA 2nd Year Portfolio loaded!');
-        console.log('📬 Email: sharmilavinayagam29@gmail.com');
-        console.log('📱 Phone: +91 63745 96563');
-
-        // Scroll Animation
-        const cards = document.querySelectorAll('.card');
-
-        const revealCards = () => {
-            cards.forEach(card => {
-                const cardTop = card.getBoundingClientRect().top;
-                const windowHeight = window.innerHeight;
-                if (cardTop < windowHeight - 100) {
-                    card.style.opacity = '1';
-                    card.style.transform = 'translateY(0)';
-                }
-            });
-        };
-
-        cards.forEach(card => {
-            card.style.opacity = '0';
-            card.style.transform = 'translateY(30px)';
-            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        document.getElementById('resumeBtn').addEventListener('click', function(e) {
+            e.preventDefault();
+            alert('📄 Please upload your resume PDF and update the link.');
         });
 
-        window.addEventListener('load', revealCards);
-        window.addEventListener('scroll', revealCards);
+        console.log('🚀 Sharmila V — MBA Portfolio loaded successfully!');
+        console.log('📬 Email: sharmilavinayagam29@gmail.com');
+        console.log('📱 Phone: +91 63745 96563');
     </script>
 
 </body>
