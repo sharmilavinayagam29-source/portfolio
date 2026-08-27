@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
     <style>
-        /* ===== RESET & BASE ===== */
         * {
             margin: 0;
             padding: 0;
@@ -38,7 +37,6 @@
             padding: 0 24px;
         }
 
-        /* ===== HEADER / NAV ===== */
         nav {
             background: #ffffff;
             box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
@@ -96,7 +94,6 @@
             background: #2563eb !important;
         }
 
-        /* ===== HERO ===== */
         .hero {
             padding: 60px 0 40px;
         }
@@ -226,6 +223,13 @@
             align-items: center;
             justify-content: center;
             box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
+            overflow: hidden;
+        }
+
+        .hero-avatar .avatar-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .hero-avatar h3 {
@@ -255,7 +259,6 @@
             transform: translateY(-3px);
         }
 
-        /* ===== SECTION TITLES ===== */
         .section-title {
             font-size: 30px;
             font-weight: 700;
@@ -279,7 +282,6 @@
             margin: 30px 0;
         }
 
-        /* ===== ABOUT ===== */
         .about-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -304,7 +306,6 @@
             margin-top: 4px;
         }
 
-        /* ===== SKILLS (TAGS) ===== */
         .skills-tags {
             display: flex;
             flex-wrap: wrap;
@@ -327,7 +328,6 @@
             transform: translateY(-2px);
         }
 
-        /* ===== CARDS ===== */
         .card-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -382,7 +382,6 @@
             color: #334155;
         }
 
-        /* ===== CONTACT ===== */
         .contact-links {
             display: flex;
             flex-wrap: wrap;
@@ -412,7 +411,6 @@
             color: #2563eb;
         }
 
-        /* ===== FOOTER ===== */
         footer {
             text-align: center;
             padding: 40px 0 30px;
@@ -422,7 +420,6 @@
             margin-top: 40px;
         }
 
-        /* ===== RESPONSIVE ===== */
         @media (max-width: 768px) {
             .hero-grid {
                 grid-template-columns: 1fr;
@@ -529,10 +526,11 @@
                 </div>
             </div>
 
-            <!-- Right - Avatar -->
+            <!-- Right - Avatar with Photo -->
             <div class="hero-avatar">
                 <div class="avatar-icon">
-                    <i class="fas fa-user-tie"></i>
+                    <!-- REPLACE 'sharmila.jpg' WITH YOUR ACTUAL PHOTO FILENAME -->
+                    <img src="sharmila.jpg" alt="Sharmila V" />
                 </div>
                 <h3>Sharmila V</h3>
                 <p>MBA 2nd Year · Strategy &amp; Analytics</p>
@@ -712,9 +710,7 @@
 
     <!-- ====== JAVASCRIPT ====== -->
     <script>
-        // ==========================================
-        // 1. SMOOTH SCROLL FOR NAVIGATION LINKS
-        // ==========================================
+        // Smooth Scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 const targetId = this.getAttribute('href');
@@ -730,18 +726,14 @@
             });
         });
 
-        // ==========================================
-        // 2. DYNAMIC FOOTER YEAR
-        // ==========================================
+        // Dynamic Footer
         const footerText = document.getElementById('footerText');
         if (footerText) {
             footerText.innerHTML =
                 `&copy; ${new Date().getFullYear()} · Sharmila V · MBA 2nd Year Portfolio · Built with <i class="fas fa-heart" style="color:#2563eb;"></i> for the future.`;
         }
 
-        // ==========================================
-        // 3. RESUME BUTTON - CUSTOM ALERT
-        // ==========================================
+        // Resume Button
         const resumeBtn = document.getElementById('resumeBtn');
         if (resumeBtn) {
             resumeBtn.addEventListener('click', function(e) {
@@ -750,17 +742,12 @@
             });
         }
 
-        // ==========================================
-        // 4. CONSOLE GREETING
-        // ==========================================
+        // Console
         console.log('🚀 Sharmila V — MBA 2nd Year Portfolio loaded!');
         console.log('📬 Email: sharmilavinayagam29@gmail.com');
         console.log('📱 Phone: +91 63745 96563');
-        console.log('✅ Portfolio ready — 100% professional.');
 
-        // ==========================================
-        // 5. SCROLL ANIMATION (Reveal Cards)
-        // ==========================================
+        // Scroll Animation
         const cards = document.querySelectorAll('.card');
 
         const revealCards = () => {
@@ -774,21 +761,14 @@
             });
         };
 
-        // Initially hide cards
         cards.forEach(card => {
             card.style.opacity = '0';
             card.style.transform = 'translateY(30px)';
             card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         });
 
-        // Reveal on load and scroll
         window.addEventListener('load', revealCards);
         window.addEventListener('scroll', revealCards);
-
-        // ==========================================
-        // 6. WELCOME MESSAGE
-        // ==========================================
-        console.log('👋 Welcome to Sharmila\'s MBA Portfolio!');
     </script>
 
 </body>
